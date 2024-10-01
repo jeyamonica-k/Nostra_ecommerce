@@ -1,0 +1,624 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui;
+}
+/* Offer_section */
+.offer_section {
+  display: flex;
+  color: #e2e1e1;
+  background-color: black;
+  padding: 5px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.offer_section p,
+i {
+  font-size: x-large;
+}
+#offer_section_close:hover {
+  cursor: pointer;
+}
+/* Navbar */
+
+.Navbar_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  z-index: 20;
+}
+
+.Navbar_container_sub2 {
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.Navbar_container_sub2 p:hover {
+  text-decoration: underline;
+}
+.Navbar_container_sub3 {
+  display: none;
+}
+.Navbar_container_sub3:hover {
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero_container {
+  margin: 20px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.hero_container_img {
+  width: 100%;
+  display: flex;
+  transition: 2s;
+}
+
+.hero_container_img img {
+  width: 100vw;
+  height: 35vw;
+}
+
+.hero_container_content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  font-size: 2rem;
+}
+
+.hero_container_content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 25%;
+  padding: 5px;
+  outline: none;
+  border: transparent;
+}
+
+.hero_container_content button:hover {
+  cursor: pointer;
+  background-color: blanchedalmond;
+}
+.hero_container_content_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.hero_container_content_leftarrow i {
+  position: absolute;
+  font-size: 7rem;
+  top: 200px;
+  left: 200px;
+}
+.hero_container_content_leftarrow i:hover {
+  cursor: pointer;
+}
+
+.hero_container_content_rightarrow i {
+  position: absolute;
+  font-size: 7rem;
+  top: 200px;
+  right: 200px;
+}
+.hero_container_content_rightarrow i:hover {
+  cursor: pointer;
+}
+
+/* Brand section */
+.brand {
+  margin: 5px;
+  padding: 5px;
+}
+.brand_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+}
+
+.brand_coursecard {
+  margin-top: 10px;
+  width: 5%;
+}
+
+.brand_coursecard img {
+  width: 100%;
+}
+.brand_coursecard p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Review section */
+
+.Review {
+  margin: 5px;
+  padding: 5px;
+}
+
+.Review_header {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  margin: 5px;
+  padding: 5px;
+}
+
+.Review_header_sub3 {
+  font-size: 1.3rem;
+}
+
+.Review_content {
+  margin-top: 15px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Review_content_coursecard {
+  width: 22%;
+  padding: 15px;
+  margin: 5px;
+  background-color: #f2f4f7;
+  border-radius: 10px;
+}
+
+.Review_content_coursecard i {
+  font-size: 2.25rem;
+}
+
+/* Shoplist */
+.shoplist,
+.Mostwanted {
+  margin: 5px;
+  padding: 5px;
+}
+.shoplist_container {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.shoplist_coursecard {
+  margin-top: 10px;
+  position: relative;
+  width: 20%;
+}
+.shoplist_coursecard img {
+  width: 100%;
+  border-radius: 2%;
+}
+.shoplist_container button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+  border: transparent;
+  border-radius: 5px;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  z-index: 2;
+}
+.overlay {
+  z-index: 1;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+/* Mostwanted */
+.Mostwanted_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: scroll;
+  width: 100%;
+}
+.Mostwanted_container::-webkit-scrollbar {
+  appearance: none;
+}
+
+.Mostwanted_coursecard {
+  width: 30%;
+  position: relative;
+}
+.Mostwanted_coursecard img {
+  border-radius: 2%;
+}
+.Mostwanted_coursecard span {
+  background-color: orangered;
+  color: white;
+  width: 25%;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+.Mostwanted_coursecard i {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2rem;
+}
+/* Offersection */
+.Offersection {
+  padding: 5px;
+  margin: 5px;
+  background-color: #1d232c;
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  color: #e2e1e1;
+}
+.Offersection_image {
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.Offersection_image img {
+  width: 80%;
+}
+.Offersection_content {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Offersection_content button {
+  width: 30%;
+  margin-top: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: transparent;
+  border-radius: 5px;
+  font-size: large;
+  justify-content: center;
+}
+
+/* Newsletter */
+.Newsletter{
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  color: #1d232c;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+.Newsletter input {
+  padding: 10px;
+  width: 70%;
+  border:  solid 2px #1d232c;
+}
+.Newsletter button{
+  margin-top: 10px;
+  background-color: #1d232c;
+  color: #e2e1e1;
+  display: flex;
+  gap:10px;
+  border: transparent;
+  padding: 10px;
+  width: 12%;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  align-items: center;
+}
+/* Footer section */
+.footersection{
+  background-color: #1d232c;
+  color: #e2e1e1;
+  
+}
+.footersection_container{
+  padding: 40px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap:10px;
+}
+.footersection_container p{
+  font-size: 1.5rem;
+}
+.footersection_icon{
+  display: flex;
+  gap:20px;
+}
+/* Media query */
+
+@media screen and (max-width: 1050px) {
+  .hero_container_content {
+    font-size: 1.5rem;
+    left: 150px;
+  }
+  .hero_container_content button {
+    width: 20%;
+  }
+  .hero_container_content_leftarrow i {
+    font-size: 6rem;
+    left: 100px;
+  }
+  .hero_container_content_rightarrow i {
+    font-size: 6rem;
+    right: 100px;
+  }
+  
+.Offersection_content button {
+  width: 40%;
+  font-size: 1rem;
+}
+}
+@media screen and (max-width: 800px) {
+  .Navbar_container_sub2 {
+    display: none;
+  }
+  .Navbar_container_sub3 {
+    display: flex;
+    padding: 10px;
+  }
+  .hero_container_content {
+    font-size: 1.2rem;
+    top: 25px;
+    left: 120px;
+  }
+  .hero_container_content_leftarrow i {
+    font-size: 5rem;
+    top: 100px;
+  }
+  .hero_container_content_rightarrow i {
+    font-size: 5rem;
+    top: 100px;
+  }
+  .brand_coursecard {
+    width: 3%;
+  }
+  .brand_coursecard p {
+    font-size: 1rem;
+  }
+  .Review_header_sub1 {
+    font-size: 0.5rem;
+  }
+  .Review_header_sub3 {
+    font-size: 1rem;
+  }
+  .Review_content_coursecard {
+    width: 43%;
+  }
+  .Review_content_coursecard i {
+    font-size: 2rem;
+  }
+  .shoplist_container button {
+    gap: 10px;
+    padding: 10px;
+    top: 45%;
+    left: 15%;
+  }
+  .Offersection_image img{
+    width: 90%;
+  }
+  .Offersection_content{
+    font-size: 1rem;
+  }
+  .Offersection_content button{
+    font-size: 0.8rem;
+  }
+ .Newsletter h1{
+  font-size: 1.2rem;
+}
+.Newsletter p{
+  font-size: 1rem;
+}
+.Newsletter button{
+  padding: 10px;
+  width: 16%;
+  font-size: 1rem;
+ 
+ }
+}
+
+@media screen and (max-width: 500px) {
+  .offer_section p,
+  i {
+    font-size: x-small;
+  }
+  .Navbar_container_sub3 i {
+    font-size: large;
+  }
+  .hero_container_content {
+    font-size: 0.6rem;
+    top: 20px;
+    left: 60px;
+    gap: 10px;
+  }
+  .hero_container_content button {
+    width: 20%;
+    gap: 2px;
+    font-size: 0.3rem;
+  }
+  .hero_container_content_leftarrow i {
+    font-size: 3rem;
+    top: 50px;
+    left: 50px;
+  }
+  .hero_container_content_rightarrow i {
+    font-size: 3rem;
+    top: 50px;
+    right: 50px;
+  }
+  .brand_coursecard p {
+    font-size: 0.8rem;
+  }
+  .Review_header_sub1 {
+    font-size: 0.3rem;
+  }
+  .Review_header_sub3 {
+    font-size: 0.5rem;
+  }
+  .Review_content_coursecard {
+    width: 38%;
+  }
+  .Review_content_coursecard i {
+    font-size: 1.5rem;
+  }
+  .shoplist_container button {
+    padding: 5px;
+    top: 40%;
+    left: 10%;
+    font-size: 0.5rem;
+  }
+  .Mostwanted_coursecard span {
+    width: 25%;
+    padding: 2px;
+    border-radius: 2px;
+    font-size: 0.5rem;
+  }
+  .Mostwanted_coursecard i {
+    font-size: 0.8rem;
+  }
+ 
+  .Offersection_content{
+    font-size: .6rem;
+  }
+  .Offersection_content button{
+    padding: 5px;
+    font-size: 0.35rem;
+    gap:10px;
+  }
+  .Newsletter p{
+    font-size: 0.6rem;
+  }
+  .Newsletter input{
+    padding: 5px;
+  }
+  .Newsletter button{
+    padding: 10px;
+    gap:5px;
+    width: 22%;
+    font-size: 0.8rem;
+   
+   }
+  .footersection_container p{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero_container_content {
+    font-size: 0.4rem;
+    top: 25px;
+    left: 90px;
+    gap: 5px;
+  }
+  .hero_container_content_leftarrow i {
+    font-size: 2rem;
+  }
+  .hero_container_content_rightarrow i {
+    font-size: 2rem;
+  }
+  .brand_coursecard p {
+    font-size: 0.5rem;
+  }
+  .Review_content_coursecard {
+    width: 35%;
+  }
+  .Review_content_coursecard i {
+    font-size: 1rem;
+  }
+  .Review_content_coursecard h4 {
+    font-size: 0.5rem;
+  }
+  .Review_content_coursecard p {
+    font-size: 0.5rem;
+  }
+  .shoplist_container button {
+    top: 35%;
+    left: 10%;
+    font-size: 0.3rem;
+  }
+  .Offersection_content button{
+    font-size: 0.3rem;
+    gap:5px;
+  }
+  .Newsletter p{
+    font-size: 0.45rem;
+  }
+  .Newsletter input{
+    padding: 3px;
+  }
+  .Newsletter button{
+    padding: 10px;
+    gap:5px;
+    width: 25%;
+    font-size: 0.6rem;
+   }
+   .footersection_container p{
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hero_container_content {
+    font-size: 0.4rem;
+    left: 60px;
+  }
+  .hero_container_content button {
+    width: 20%;
+    font-size: 0.2rem;
+  }
+  .Review_header_sub1 {
+    font-size: 0.2rem;
+  }
+  .Review_header_sub3 {
+    font-size: 0.3rem;
+  }
+  .Mostwanted_coursecard span {
+    font-size: 0.25rem;
+  }
+  .Mostwanted_coursecard i {
+    font-size: 0.5rem;
+  }
+  .Offersection_content{
+    font-size: .45rem;
+  }
+  .Offersection_content button{
+
+    font-size: 0.2rem;
+  }
+ 
+}
