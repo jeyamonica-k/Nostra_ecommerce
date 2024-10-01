@@ -9,13 +9,13 @@ body {
 /* Offer_section */
 .offer_section {
   display: flex;
-  color: #e2e1e1;
-  background-color: black;
+  color:#e2e1e1;
+  background-color:#1d232c;
   padding: 5px;
-  margin: 5px;
   justify-content: center;
   align-items: center;
   gap: 60px;
+  z-index: 30;
 }
 
 .offer_section p,
@@ -53,6 +53,35 @@ i {
 .Navbar_container_sub3:hover {
   cursor: pointer;
 }
+.Sidenavbar{
+  display: flex;
+  flex-direction: column;
+  background-color: #1d232c;
+  color: #e2e1e1;
+  position:absolute;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  height: 100vh;
+  width: 50%;
+  left: -50%;
+  gap: 2px;
+  transition-duration: 2s;
+  
+}
+.Sidenavbar p{
+  margin: 10px;
+  padding: 5px;
+}
+
+.Sidenavbar p:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Sidenavbar i:hover{
+  cursor: pointer;
+}
+
 
 /* Hero section */
 .hero_container {
