@@ -58,11 +58,11 @@ i {
   flex-direction: column;
   background-color: #1d232c;
   color: #e2e1e1;
-  position:absolute;
+  position:fixed;
   left: 0;
   top: 0;
   z-index: 30;
-  height: 100vh;
+  height: 100vw;
   width: 50%;
   left: -50%;
   gap: 2px;
@@ -378,7 +378,7 @@ i {
 }
 .footersection_container{
   padding: 40px;
-  margin: 20px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -390,6 +390,83 @@ i {
 .footersection_icon{
   display: flex;
   gap:20px;
+}
+
+
+/* Collection section */
+.Selectcart{
+  display: flex;
+  
+  margin: 5px;
+  padding: 5px;
+}
+.Selectcart_option{
+  display: flex;
+  flex-direction: column;
+  gap:2vw;
+  padding: 10px;
+  margin-top: 50px;
+  width: 28%;
+}
+.Selectcart_option1,.Selectcart_option2,.Selectcart_option3{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+
+}
+.Selectcart_option_input{
+  font-size: 2rem ;
+  
+}
+.Selectcart_option_input input:hover{
+  cursor: pointer;
+}
+.Selectcart_collection{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+  border-left: solid black 3px;
+  padding: 20px;
+  width: 100%;
+}
+.Selectcart_collection_coursecard{
+  width: 30%;
+}
+
+/* contact form */
+.contact-form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form{
+  width: 70%;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5vw;
+  background-color: #1d232c;
+  color: #e2e1e1;
+}
+.inp_name,.inp_email,.inp_msg{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 95%;
+  height: 5vw;
+  border-radius: 5px;
+}
+.inp_msg{
+  height: 8vw;
+}
+.inp_btn{
+  background-color: #0056B3;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  font-size: 1.5vw;
 }
 /* Media query */
 
@@ -413,6 +490,13 @@ i {
 .Offersection_content button {
   width: 40%;
   font-size: 1rem;
+}
+/* collection section */
+.Selectcart_option1 h1,.Selectcart_option2 h1,.Selectcart_option3 h1{
+  font-size: 1.5rem;
+}
+.Selectcart_option_input{
+  font-size: 1.5rem;
 }
 }
 @media screen and (max-width: 800px) {
@@ -481,7 +565,23 @@ i {
   font-size: 1rem;
  
  }
+ /* collection section */
+ 
+ .Selectcart_option{
+  margin-top: 1px;
+  padding: 5px;
+ }
+.Selectcart_option1 h1,.Selectcart_option2 h1,.Selectcart_option3 h1{
+  font-size: 1.2rem;
 }
+.Selectcart_option_input{
+  font-size: 1.2rem;
+}
+.Selectcart_collection_coursecard h1{
+  font-size: 1.2rem;
+}
+}
+
 
 @media screen and (max-width: 500px) {
   .offer_section p,
@@ -567,6 +667,26 @@ i {
   .footersection_container p{
     font-size: 1rem;
   }
+  /* collection section */
+  .Selectcart_option{
+    margin-top: 0;
+    padding: 2px;
+   }
+.Selectcart_option1 h1,.Selectcart_option2 h1,.Selectcart_option3 h1{
+  font-size: 0.8rem;
+}
+.Selectcart_option_input{
+  font-size: 0.8rem;
+}
+.Selectcart_collection_coursecard h1{
+  font-size: 0.8rem;
+}
+.Selectcart_collection_coursecard p{
+  font-size: 0.7rem;
+}
+.contact-form h1{
+  font-size: 1.5rem;
+}
 }
 @media screen and (max-width: 400px) {
   .hero_container_content {
@@ -620,6 +740,12 @@ i {
    .footersection_container p{
     font-size: 0.8rem;
   }
+  .Selectcart_collection_coursecard h1{
+    font-size: 0.6rem;
+  }
+  .Selectcart_collection_coursecard p{
+    font-size: 0.4rem;
+  }
 }
 
 @media screen and (max-width: 330px) {
@@ -649,6 +775,12 @@ i {
   .Offersection_content button{
 
     font-size: 0.2rem;
+  }
+  .Selectcart_collection_coursecard h1{
+    font-size: 0.4rem;
+  }
+  .Selectcart_collection_coursecard p{
+    font-size: 0.4rem;
   }
  
 }
